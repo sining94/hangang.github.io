@@ -41,10 +41,13 @@ header nav .gnb > li > ul{display:none;position:absolute;top:100%;left:0;right:0
 header nav .gnb > li > ul > li{}
 header nav .gnb > li > ul > li > a{display:block;width:100%;height:100%;padding:10px 0}
 
+section{background: url(../img/pattern_bg.png) repeat-y;background-size:cover}
 .swiper{}
+
 .swiper .swiper-slide > img{width:100vw}
 .brandArea{display:flex}
 .brandArea > div{width:50%}
+.brandArea > div:first-child{background:url(../img/pattern_bg.png) repeat-y}
 .brandArea > .redArea{background:#ECCDAA;padding:134px 0 187px 157px}
 .brandArea > div > img{width:100%;height:100%}
 
@@ -54,4 +57,21 @@ header nav .gnb > li > ul > li > a{display:block;width:100%;height:100%;padding:
 .brandArea .redArea .subTxt{margin:38px 0 127px 0;font-size:31px;font-weight:400}
 .brandArea .menuBtn{display:flex;width:600px}
 .brandArea .menuBtn a:nth-child(1){margin-right:126px}
-.redBtnS{display:flex;justify-content:center;align-items:center;width:236px;height:82px;border-radius:25px;background:#E60012;color:#fff;font-size:40px}
+.redBtnS{display:flex;justify-content:center;align-items:center;width:236px;height:82px;border-radius:50px;background:#E60012;color:#fff;font-size:40px}
+
+.menuArea{background:url(../img/pattern_bg.png) repeat-y;background-size:100% auto;padding-top:100px;padding-bottom:60px;text-align:center}
+.menuArea > h2{text-align:center;font-size:52px;line-height:1.7;margin-bottom:100px}
+.menuArea .selectMenu{padding:0 85px;display:flex;justify-content:center;align-items:center}
+.menuArea .selectMenu .menuList{width:100%;margin-right:70px}
+.menuArea .selectMenu .menuList:last-child{margin-right:0}
+.menuArea .selectMenu .menuList > div{position:relative}
+.menuArea .selectMenu .menuList > div img{width:100%;height:100%}
+.menuArea .selectMenu .menuList .detailArea{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.3);color:#fff;text-align:center;padding:150px 30px 0}
+.menuArea .selectMenu .menuList .detailArea h3{font-size:49px;font-weight:500;margin-bottom:50px}
+.menuArea .selectMenu .menuList .detailArea h3+p{font-size:34px;font-weight:400}
+.menuArea .selectMenu .menuList .detailArea .plusBtn{position:absolute;font-size:0;width:35px;height:35px;background:url(../img/plus.png) no-repeat;background-size:100% auto;z-index: 1;left:50%;margin-left:-17px;bottom:40px}
+.menuArea .selectMenu .menuList > h3{text-align:center;margin-top:20px;font-size:49px}
+.menuArea .redBtnL{margin-top:40px;padding:28px 132px;color:#fff;background:#E60012;border-radius:50px;font-size:41px}
+
+.pointArea{background:url(../img/pattern_bg.png) repeat-y;background-size:100% auto}
+.pointArea > img{width:100%}
