@@ -1,9 +1,10 @@
 @charset "utf-8";
 
 /* Common */
+body *{font-family:'GmarketSans'}
 body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,form,fieldset,legend,input,textarea,button,select,div,figure{margin:0;padding:0;box-sizing:border-box;word-break:keep-all;word-wrap:break-word}
 td,th{margin:0;padding:0;word-break:keep-all;word-wrap:break-word}
-body,input,textarea,select,button,table,th,td,pre{color:#333;font-family:GmaketSans, Arial, sans-serif;font-weight:400;font-size:20px;line-height:1.3}
+body,input,textarea,select,button,table,th,td,pre{color:#333;font-family:'GmaketSans';font-weight:400;font-size:20px;line-height:1.3}
 h1,h2,h3,h4,h5,h6{font-weight:normal;line-height:1.2}
 img,fieldset,iframe{border:0;vertical-align:top}
 textarea{resize:none}
@@ -21,7 +22,7 @@ a{text-decoration:none}
 a:hover{text-decoration:none}
 a{box-sizing:border-box}
 a, button{cursor:pointer}
-section{height:100vh;box-sizing:border-box}
+section{box-sizing:border-box}
 
 
 .hidden{overflow:hidden;position:absolute;font:0/0 GmarketSans, Arial}
@@ -30,6 +31,7 @@ section{height:100vh;box-sizing:border-box}
 .skip a{display:block;width:100%;margin-top:-50px}
 .skip a:focus{height:50px;margin-top:0;color:#fff;font-size:20px;line-height:50px;text-align:center;background:#111}
 
+body{background:url(../img/pattern_bg.png) repeat-y;background-size:100% auto}
 header{width:100%;height:150px}
 header .logoArea{height:100px;display:flex;justify-content:center;align-items:center;background:#fff}
 header .logoArea a{width:400px;height:60px}
@@ -41,7 +43,7 @@ header nav .gnb > li > ul{display:none;position:absolute;top:100%;left:0;right:0
 header nav .gnb > li > ul > li{}
 header nav .gnb > li > ul > li > a{display:block;width:100%;height:100%;padding:10px 0}
 
-section{background: url(../img/pattern_bg.png) repeat-y;background-size:cover}
+section{}
 .swiper{}
 
 .swiper .swiper-slide > img{width:100vw}
@@ -57,7 +59,7 @@ section{background: url(../img/pattern_bg.png) repeat-y;background-size:cover}
 .brandArea .redArea .subTxt{margin:38px 0 127px 0;font-size:31px;font-weight:400}
 .brandArea .menuBtn{display:flex;width:600px}
 .brandArea .menuBtn a:nth-child(1){margin-right:126px}
-.redBtnS{display:flex;justify-content:center;align-items:center;width:236px;height:82px;border-radius:50px;background:#E60012;color:#fff;font-size:40px}
+.redBtnS{display:flex;justify-content:center;align-items:center;width:236px;height:82px;border-radius:50px;background:#E60012;color:#fff;font-size:40px;margin:0 auto}
 
 .menuArea{background:url(../img/pattern_bg.png) repeat-y;background-size:100% auto;padding-top:100px;padding-bottom:60px;text-align:center}
 .menuArea > h2{text-align:center;font-size:52px;line-height:1.7;margin-bottom:100px}
@@ -74,7 +76,7 @@ section{background: url(../img/pattern_bg.png) repeat-y;background-size:cover}
 .redBtnL{width:585px;color:#fff;padding:30px 130px;background:#E60012;border-radius:50px;font-size:41px}
 .menuArea .btnArea{margin-top:70px;height:116px}
 
-.pointArea{background:url(../img/pattern_bg.png) repeat-y;background-size:100% auto}
+.pointArea{background:url(../img/pattern_bg.png) repeat-y;background-size:100% auto;margin-bottom:210px}
 .pointArea > img{width:100%}
 .pointArea .txt{font-size:53px;text-align:center;margin-bottom:80px}
 .pointArea .txt em{color:#E60012;font-size:56px}
@@ -82,3 +84,22 @@ section{background: url(../img/pattern_bg.png) repeat-y;background-size:cover}
 .pointArea .redArea img{width:100%;height:100%}
 .pointArea .redArea > a{position:absolute;left:50%;margin-left:-292px;bottom:30px;text-align:center}
 
+.videoArea{display:flex;padding-bottom:200px}
+.videoArea > div{width:100%;text-align:center;padding:0 70px}
+.videoArea .mvArea{position:relative}
+.videoArea .mvArea::after{content:'';display:block;position:absolute;right:0;bottom:0;height:100%;width:1px;background:#707070;}
+.videoArea .mvArea .descrip{font-size:36px;font-weight:600;margin-bottom:30px;position:relative}
+.videoArea .mvArea .descrip::before{content:'';display:block;width:277px;height:90px;position:absolute;left:50%;margin-left:-138px;top:-100px;background:url(../img/tvn.png) no-repeat;background-size:100% auto;}
+.iframeContainer {position: relative;width: 100%;height: 0;padding-top: 56.25%}
+.iframeContainer iframe {position: absolute;width: 100%;height: 100%;top: 0;left: 0}
+.callArea{text-align:center}
+.callArea > p{margin-top:33px;font-size:37px;font-weight:600}
+.callArea .number{font-size:46px;font-weight:500}
+.callArea .btnArea{margin-top:33px}
+
+footer{width:100%;padding:35px 0 20px;background:#464646;text-align:center}
+footer > ul{display:flex;justify-content:center;align-items:center;margin-top:15px}
+footer > ul > li{position:relative}
+footer > ul > li::after{content:'';display:block;width:1px;height:100%;background:#fff;position:absolute;top:0;bottom:0;right:0}
+footer > ul > li:last-child:after{content:none}
+footer > ul > li > a{text-decoration:none;color:#fff;font-size:26px;font-weight:500;padding:0 5px;}
