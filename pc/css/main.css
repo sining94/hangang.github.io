@@ -26,6 +26,9 @@ a, button{cursor:pointer}
 section{box-sizing:border-box}
 
 .hidden{overflow:hidden;position:absolute;font:0/0 GmarketSans, Arial}
+.mo{display:none}
+.pc{display:block}
+
 
 .skip{position:relative;width:100%;overflow:hidden}
 .skip a{display:block;width:100%;margin-top:-50px}
@@ -35,10 +38,11 @@ body{background:url(../img/pattern_bg.png) repeat-y;background-size:100% auto}
 header{width:100%;height:150px}
 header .logoArea{height:100px;display:flex;justify-content:center;align-items:center;background:#fff}
 header .logoArea a{width:400px;height:60px}
+header .logoArea a img{width:100%;height:auto}
 header nav{text-align:center;background:#E60012}
 header nav .gnb{display:flex;justify-content:center;align-items:center;max-width:80%;height:50px;margin:0 auto}
 header nav .gnb > li{position:relative;display:block;height:100%}
-header nav .gnb > li > a{position:relative;display:flex;justify-content:center;align-items:center;width:100%;height:100%;padding:0 100px;color:#fff;font-size:24px;font-weight:500}
+header nav .gnb > li > a{position:relative;display:flex;justify-content:center;align-items:center;width:100%;height:100%;padding:0 80px;color:#fff;font-size:24px;font-weight:500}
 header nav .gnb > li:hover{background:#fff;color:#000}
 header nav .gnb > li:hover > a{color:#000}
 header nav .gnb > li:hover::after{content:'';display:block;position:absolute;bottom:0;left:2%;right:2%;height:5px;background:#000}
@@ -48,9 +52,11 @@ header nav .gnb > li > ul > li > a{display:block;width:100%;height:100%;padding:
 .cont{padding:130px 160px}
 
 .swiper{}
+.swiper .swiper-wrapper{}
+
 
 /* 메인 */
-.swiper .swiper-slide > img{width:100vw}
+.swiper .swiper-slide > img{width:100%}
 .brandArea{display:flex;position:relative}
 .brandArea > div{width:50%}
 .brandArea > div:first-child{background:url(../img/pattern_bg.png) repeat-y}
@@ -112,6 +118,7 @@ footer > ul > li:last-child:after{content:none}
 footer > ul > li > a{text-decoration:none;color:#fff;font-size:20px;font-weight:500;padding:0 10px}
 
 @media (max-width:1440px) {
+    /* 메인 */
     .brandArea .redArea .mainTxt{font-size:2.639vw}
     .brandArea .redArea h2,
     .brandArea .redArea strong{font-size:4.51vw}
@@ -125,6 +132,7 @@ footer > ul > li > a{text-decoration:none;color:#fff;font-size:20px;font-weight:
     .callArea > p{font-size:2.57vw}
     .callArea .number{font-size:3.19vw}
     .callArea .btnArea a{font-size:2.22vw}
+    .redBtnS{font-size:2.22vw;padding:10px 40px}
 }
 
 /* 대표인사말 */

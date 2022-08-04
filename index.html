@@ -4,202 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>한강로 칼국수</title>
-    <meta name="desccription" contents="한강로 칼국수">
-    
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="한강로 칼국수">
-    <meta property="og:description" content="마음까지 따뜻해지는 우리들의 영원한 소울푸드">
-    <!-- 연결 링크 채울것  -->
-    <meta property="og:url" content="">
-    
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="한강로 칼국수">
-    <meta name="twitter:description" content="마음까지 따뜻해지는 우리들의 영원한 소울푸드">
-    
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    <link href="./css/font.css" rel="stylesheet" type="text/css">
-    <link href="./css/main.css" rel="stylesheet" type="text/css">
-    <script defer type="text/javascript" src="./js/main.js"></script>
-    
+    <title>Document</title>
 </head>
+<script language="javascript"> 
+    // Mobile여부를 구분하기 위함
+    var uAgent = navigator.userAgent.toLowerCase(); 
+
+    // 아래는 모바일 장치들의 모바일 페이지 접속을위한 스크립트
+    var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce','nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
+    for (var i = 0; i < mobilePhones.length; i++){
+        if (uAgent.indexOf(mobilePhones[i]) != -1){
+            document.location = "./mo/index.html";
+        }
+        else {
+            document.location = "./pc/index.html";
+        }
+    }
+</script>
 <body>
-    <p id="skip" class="skip"><a href="#container">Go to Contents</a></p>
-
-    <header>
-        <div class="logoArea">
-            <a href="#" class="logo">
-                <img src="./img/logo.png" alt="">
-            </a>
-        </div>
-        <nav>
-            <ul class="gnb">
-                <li>
-                    <a href="#">브랜드</a>
-                    <ul>
-                        <li><a href="./greetings.html">대표인사말</a></li>
-                        <li><a href="">한강로 이야기</a></li>
-                        <li><a href="">김치철학</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">메뉴</a>
-                    <ul>
-                        <li><a href="">점심식사메뉴</a></li>
-                        <li><a href="">저녁모던주막메뉴</a></li>
-                        <li><a href="">쇼핑몰 전용메뉴</a></li>
-                        <li><a href="">포장메뉴</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">프랜차이즈</a>
-                    <ul>
-                        <li><a href="">창업포인트</a></li>
-                        <li><a href="">인테리어</a></li>
-                        <li><a href="">창업비용</a></li>
-                        <li><a href="">창업절차</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">스토어</a>
-                    <ul>
-                        <li><a href="">신규오픈</a></li>
-                        <li><a href="">점포안내</a></li>
-                        <li><a href="">커뮤니티</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
     
-    <section>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./img/dummy.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./img/dummy.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./img/dummy.jpg" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="brandArea">
-            <div>
-                <img src="./img/mainfood.png" alt="한강로 칼국수">
-            </div>
-            <div class="redArea">
-                <p class="mainTxt">한강로 브랜드</p>
-                <h2>마음까지 따듯해지는<br> 우리들의</h2>
-                <strong>영원한 소울푸드</strong>
-                <p class="subTxt">우리 모두는 따뜻함이 필요한 시대에 살고 있습니다.<br>
-                    &lt;한강로칼국수&gt;에서 만큼은 편안하고 온기있는<br>
-                    소울푸드로 따뜻하게 마음의 온도를 높여드립니다.
-                </p>
-                <div class="menuBtn">
-                    <a href="" class="redBtnS">브랜드</a>
-                    <a href="" class="redBtnS">메뉴소개</a>
-                </div>
-            </div>
-        </div>
-
-        <div id="container" class="menuArea">
-            <h2>맛있고 따듯한<br>
-                <span><img src="./img/menulogo.png" alt="">대표메뉴</span></h2>
-            <div class="selectMenu">
-                <div class="menuList">
-                    <div>
-                        <img src="./img/menu1.jpg" alt="">
-                        <div class="detailArea">
-                            <h3>한강로 보쌈</h3>
-                            <p>당일 삶은 국내산 돼지고기에 특제 양념으로 맛을 낸 생김치가 조화로운 대표메뉴보쌈</p>
-                            <a href="#" class="plusBtn">
-                                메뉴 소개 보기
-                            </a>
-                        </div>
-                    </div>
-                    <h3>한강로 보쌈</h3>
-                </div>
-                <div class="menuList">
-                    <div>
-                        <img src="./img/menu2.jpg" alt="">
-                        <div class="detailArea">
-                            <h3>칼국수</h3>
-                            <p>당일 삶은 국내산 돼지고기에 특제 양념으로 맛을 낸 생김치가 조화로운 대표메뉴보쌈</p>
-                            <a href="#" class="plusBtn">
-                                메뉴 소개 보기
-                            </a>
-                        </div>
-                    </div>
-                    <h3>칼국수</h3>
-                </div>
-                <div class="menuList">
-                    <div>
-                        <img src="./img/menu3.jpg" alt="">
-                        <div class="detailArea">
-                            <h3>해물파전</h3>
-                            <p>당일 삶은 국내산 돼지고기에 특제 양념으로 맛을 낸 생김치가 조화로운 대표메뉴보쌈</p>
-                            <a href="#" class="plusBtn">
-                                메뉴 소개 보기
-                            </a>
-                        </div>
-                    </div>
-                    <h3>해물파전</h3>
-                </div>
-            </div>
-            <div class="btnArea"> <a href="" class="redBtnL">더 많은 메뉴 보기</a></div>
-        </div>
-
-        <div class="pointArea">
-            <img src="./img/img1.jpg" alt="">
-            <p class="txt">칼국수 집은 많지만<br>
-                1등 칼국수 브랜드가 없는 지금,<br>
-            </p>
-            <p class="txt">따뜻하고 편안함을 전해주는 브랜드<br>
-                <em>한강로칼국수</em>를 만나실 기회입니다.
-            </p>
-            <div class="redArea">
-                <img src="./img/redbg.png" alt="">
-                <div class="btnArea">
-                    <a href="" class="redBtnL">보러가기</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="videoArea">
-            <div class="mvArea">
-                <p class="descrip">'유재석이 극찬한 칼국수와 보쌈'</p>
-                <div class="iframeContainer">
-                    <iframe id="mainVideo" width="100%" height="100%" src="https://www.youtube.com/embed/2_NZoO38cfM?autoplay=1&mute=1&modestbranding=1" frameborder="0" allow="accelerometer; autoplay=1&mute=1; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                </div>
-            </div>
-            <div class="callArea">
-                <img src="./img/call.png" alt="">
-                <p>창업문의</p>
-                <p class="number">1544-2644</p>
-                <div class="btnArea">
-                    <a href="" class="redBtnS">창업절차</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <img src="./img/flogo.png" alt="" class="flogo">
-        <ul>
-            <li><a href="">개인정보취급방침</a></li>
-            <li><a href="">이용약관</a></li>
-        </ul>
-    </footer>
-
-    <div class="fixArea">
-
-    </div>
-    
-    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="./js/swiper.min.js"></script>
 </body>
 </html>

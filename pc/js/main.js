@@ -10,14 +10,13 @@
   const $menu = $('.gnb > li');
   const $menuEls = $('.gnb > li > ul');
   
-  $menu.hover(function(){
-    if($(this).find('ul').hasClass('on') === false){
+  $menu.on({
+    mouseenter: function(){
       $(this).find('ul').addClass('on');
-    }
-    else {
+    },
+    mouseleave: function(){
       $(this).find('ul').removeClass('on');
     }
-
   });
 
 
