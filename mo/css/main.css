@@ -104,7 +104,7 @@ header nav .gnb > li > ul > li > a{display:block}
 .videoArea .mvArea .descrip{font-size:18px;font-weight:600;margin-bottom:30px;position:relative}
 .videoArea .mvArea .descrip::before{content:'';display:block;width:138px;height:44px;position:absolute;left:50%;margin-left:-69px;top:-50px;background:url(../img/tvn.png) no-repeat;background-size:100% auto;}
 .videoArea .iframeContainer{position: relative;width: 100%;height: 0;padding-top: 56.25%;margin-bottom:50px}
-.videoArea .iframeContainer::after{content:'';display:block;position:absolute;bottom:-10%;left:-33%;width:51px;height:51px;background:url(../img/garlic.png) no-repeat;background-size:100% auto;background-position:center}
+.videoArea .mvArea::after{content:'';display:block;position:absolute;bottom:15%;left:-5%;width:51px;height:51px;background:url(../img/garlic.png) no-repeat;background-size:100% auto;background-position:center}
 .videoArea .iframeContainer iframe{position: absolute;width: 100%;height: 100%;top: 0;left: 0}
 .videoArea > div.callArea{padding:50px 70px}
 .callArea > p{margin-top:10px;font-size:18px;font-weight:600}
