@@ -50,7 +50,7 @@ header nav .gnb > li.on > a::after{content:'';display:block;position:absolute;wi
 header nav .gnb > li > ul{display:none}
 header nav .gnb > li.on > ul{}
 header nav .gnb > li > ul > li{padding:15px 0;background:#fff}
-header nav .gnb > li > ul > li > a{display:block}
+header nav .gnb > li > ul > li > a{display:block;color:#000}
 
 
 .swiper{}
