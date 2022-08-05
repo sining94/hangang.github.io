@@ -24,10 +24,12 @@
 
     if (this_device) {
         if (pc_device.indexOf(navigator.platform.toLowerCase()) < 0) {
-            document.location = "./pc/index.html";
+            // document.location = "./pc/index.html";
+            window.alert('mo');
         }
         else {
-            document.location = "./mo/index.html";
+            // document.location = "./mo/index.html";
+            window.alert('pc');
         }
     }
 }());
