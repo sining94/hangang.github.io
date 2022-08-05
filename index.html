@@ -18,19 +18,19 @@
     <meta name="twitter:description" content="마음까지 따뜻해지는 우리들의 영원한 소울푸드">
 </head>
 <script language="javascript"> 
-    // Mobile여부를 구분하기 위함
-    var uAgent = navigator.userAgent.toLowerCase(); 
+(function device_check() {
+    var pc_device = "win16|win32|win64|mac|macintel";
+    var this_device = navigator.platform;
 
-    // 아래는 모바일 장치들의 모바일 페이지 접속을위한 스크립트
-    var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce','nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
-    for (var i = 0; i < mobilePhones.length; i++){
-        if (uAgent.indexOf(mobilePhones[i]) != -1){
+    if (this_device) {
+        if (pc_device.indexOf(navigator.platform.toLowerCase()) < 0) {
             document.location = "./mo/index.html";
         }
         else {
             document.location = "./pc/index.html";
         }
     }
+}());
 </script>
 <body>
     
