@@ -169,8 +169,8 @@ footer p span::before{content:'';display:block;position:absolute;top:-1px;left:-
 
 /* 한강로이야기 */
 .story .cont .topTxt{font-size:45px;font-weight:500;margin:94px auto;text-align:center}
-.story .cont .halfArea{display:flex}
-.story .cont .halfArea > div{width:100%}
+.cont .halfArea{display:flex}
+.cont .halfArea > div{width:100%}
 .story .cont .halfArea > div img{width:100%;height:auto}
 .story .cont .halfArea .txtArea{position:relative;padding:135px 70px 20px 80px;background-image:url(../img/circle1.png);background-repeat:no-repeat;background-position:-205px 0;background-size:526px auto}
 
@@ -207,6 +207,34 @@ footer p span::before{content:'';display:block;position:absolute;top:-1px;left:-
 .story .cont .biArea .biCont .biColor{display:flex;justify-content:space-between;align-items:center;font-size:40px;font-weight:600;margin-bottom:20px}
 .story .cont .biArea .biCont .biColor div{width:65%;height:40px;display:inline-block}
 
+/* 김치철학 */
+.philosophy .halfArea > *{width:50%;flex-basis:50%}
+.philosophy .halfArea .txtArea{padding:60px 50px}
+.philosophy .halfArea .txtArea strong{font-size:75px;color: #ED1B23;}
+.philosophy .halfArea .txtArea h2{font-size:61px;font-weight:500;margin-bottom:35px}
+.philosophy .halfArea .txtArea p{font-size:27px;font-family:'Chosunilbo_myungjo';margin-bottom:35px}
+.philosophy .halfArea .txtArea .colorBg{background:url(../img/pattern_red.png) repeat-y;background-size:100% auto}
 
+/* 점심식사메뉴 */
+.lunchMenu{}
+.lunchMenu .cont{padding-top:155px}
+.lunchMenu .explainArea{display:flex;padding:0 75px;justify-content:center;align-items:center;max-width:90%;margin:0 auto}
+.lunchMenu .explainArea > *{width:100%}
+.lunchMenu .explainArea strong{font-size:74px;color:#a35b2a;flex-basis:55%}
+.lunchMenu .explainArea img{max-width:480px;height:auto}
+.lunchMenu .explainArea span{font-size:40px;padding-left:35px}
+.lunchMenu .explainArea span em{font-weight:600}
 
+.lunchMenu .lunchArea > div{padding:25px 0}
+.lunchMenu .lunchArea > div:nth-child(odd){background:#fff}
+.lunchMenu .lunchArea > div:nth-child(odd) strong{color:#ed1b24}
+.lunchMenu .lunchArea > div:nth-child(even){background:#eccdaa}
+.lunchMenu .lunchArea > div:nth-child(even) strong{color:#000}
+.lunchMenu .lunchArea .halfArea > *{width:50%}
+.lunchMenu .lunchArea .halfArea > div{padding:200px 80px 0}
+.lunchMenu .lunchArea .halfArea > div strong{display:block;font-size:71px;margin-bottom:47px}
+.lunchMenu .lunchArea .halfArea > div p{font-size:40px;color:#000}
+.lunchMenu .lunchArea .halfArea > div .season{display:inline-block;margin-bottom:24px;font-size:42px;font-weight:600;color:#fff;background:#ed1b24;padding:15px 18px 7px 18px;line-height:1;border-radius:10px}
 
+/* 저녁모던주막메뉴 */
+.dinnerMenu{}
